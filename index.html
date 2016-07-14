@@ -1,0 +1,627 @@
+﻿<html>
+
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="css/Quoteboard.css" />
+		<script type="text/javascript" src="js/amcharts.js"></script>
+		<script type="text/javascript" src="js/pie.js"></script>
+		<script>
+            var chart;
+            var legend;
+
+            var chartData = [
+                {
+                    "country": "Lithuania",
+                    "value": 260
+                },
+                {
+                    "country": "Ireland",
+                    "value": 201
+                },
+                {
+                    "country": "Germany",
+                    "value": 65
+                },
+                {
+                    "country": "Australia",
+                    "value": 39
+                },
+                {
+                    "country": "UK",
+                    "value": 19
+                },
+                {
+                    "country": "Latvia",
+                    "value": 10
+                }
+            ];
+
+            AmCharts.ready(function () {
+                // PIE CHART
+                chart = new AmCharts.AmPieChart();
+                chart.dataProvider = chartData;
+                chart.titleField = "country";
+                chart.valueField = "value";
+                chart.color = "#0A0F0E";
+                chart.colors=["#FF6600","#FF0F00","#000000"];
+                chart.labelColorField="#FFFFFF"
+                chart.outlineColor = "#FFFFFF";
+                chart.labelColorField="#FFFFFF";
+                chart.outlineAlpha = 0.8;
+                chart.alpha=1;
+                chart.outlineThickness = 2;
+                chart.balloonText = "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>";
+                // this makes the chart 3D
+                chart.depth3D = 10;
+                chart.angle = 20;
+                
+
+                // WRITE
+                chart.write("chartdiv");
+            });
+        </script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="left">
+				<p class="headInfo">基本信息</p>
+				<div class="lefttop">
+					<table border="0" cellspacing="10" cellpadding="">
+
+						<tr>
+							<td class="first">发行主体</td>
+							<td class="second">红豆集团</td>
+						</tr>
+						<tr>
+							<td class="first">主体类型</td>
+							<td class="second">民营企业</td>
+							<td class="first">组织形式</td>
+							<td class="second">有限责任公司</td>
+						</tr>
+						<tr>
+							<td class="first">一级行业</td>
+							<td class="second">纺织服装</td>
+							<td class="first">二级行业</td>
+							<td class="second">服装家纺</td>
+						</tr>
+						<tr>
+							<td class="first">地区(省)</td>
+							<td class="second">江苏</td>
+							<td class="first">地区(市)</td>
+							<td class="second">无锡</td>
+						</tr>
+						<tr>
+							<td class="first">控股股东</td>
+							<td class="second">周耀庭；周海江；周海明</td>
+							<td></td>
+							<td class="third">自然人</td>
+						</tr>
+						<tr>
+							<td class="first">控股比例</td>
+							<td class="second">75.0944%</td>
+							<td class="first">注册资本</td>
+							<td class="second">10.95亿元</td>
+						</tr>
+						<tr>
+							<td class="first">实际控制人</td>
+							<td class="second">周耀庭</td>
+							<td></td>
+							<td class="third">自然人</td>
+						</tr>
+						<tr>
+							<td class="first">经营范围</td>
+							<td class="second" colspan="4">许可经营项目:无。一般经营项目：利用自由资金对外投资及管理(国家法律法规禁止、限制的领域除外)；服装、针纺织品</td>
+						</tr>
+					</table>
+				</div>
+				<p class="headInfo">流通中债券</p>
+				<div class="leftbottom" >
+					<div class="tablehead">
+						<table  border="0" cellspacing="0" cellpadding="">
+							<tr>
+								<td>剩余期限</td>
+								<td>简称</td>
+								<td>发行量(亿)</td>
+								<td>债项</td>
+								<td>流通市场</td>
+							</tr>
+							</table>
+					</div>
+					<div class="tableContent">
+						<table class="leftBottomTable" border="0" cellspacing="0" cellpadding="">
+							
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+							<tr>
+								<td>1.36Y</td>
+								<td>12红豆MTN3</td>
+								<td>4</td>
+								<td>AA</td>
+								<td><button>银行间</button></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+				<p class="headInfo">营业分布</p>
+				<div class="righttop" style="position: relative;">					
+					<div  style="width:29%; height: 100%;float: left;">
+			         <div  id="chartdiv" style="width: 800px; height: 300px;position: absolute;top:-20px;left: -280px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></div> 
+					
+					</div>
+					<div style="float: right;width: 70%;">
+					<table class="leftBottomTable" border="0" cellspacing="0" cellpadding="">
+						<tr class="first">
+							<td>类型</td>
+							<td>营业收入(百万元)</td>
+							<td>百分比(%)</td>
+						</tr>
+						<tr>
+							<td>类型</td>
+							<td>营业收入(百万元)</td>
+							<td>百分比(%)</td>
+						</tr>
+						<tr>
+							<td>其他</td>
+							<td>311.00</td>
+							<td>8.07</td>
+						</tr>
+						<tr>
+							<td>房地产</td>
+							<td>112.00</td>
+							<td>2.91</td>
+						</tr>
+						<tr>
+							<td>服装板块</td>
+							<td>2722.00</td>
+							<td>70.61</td>
+						</tr>
+						<tr>
+							<td>机构行业</td>
+							<td>--</td>
+							<td>--</td>
+						</tr>
+						<tr>
+							<td>生物医药</td>
+							<td>32.00</td>
+							<td>0.83</td>
+						</tr>
+						<tr>
+							<td>轮胎板块</td>
+							<td>678.00</td>
+							<td>17.59</td>
+						</tr>
+					</table>
+					</div>
+				</div>
+				<div class="rightbottom">
+					
+						<div class="rightbottomtablehead">
+							<button class="finance">财务指标</button><button class="finance">财务数据</button><span>单位:%</span>
+						<table  border="0" cellspacing="0" cellpadding="">
+							<tr>
+								<td></td>
+								<td>2015-12-31</td>
+								<td>2015-06-30</td>
+								<td>2014-12-31</td>
+								<td>2014-06-30</td>
+								<td>2013-12-31</td>
+								<td>2013-06-30</td>
+							</tr>
+							</table>
+					</div>
+					
+				
+					<div class="rightBottomT">
+						<table class="leftBottomTable" border="0" cellspacing="0" cellpadding="">
+							<tr>
+								<td>货币资金</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应收票据</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应收利息</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应收账款</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>其他应收款</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>预付款项</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>存货</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>其他流动资产</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>流动资产合计</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>可供出售金融资产</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>投资性房地产</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>长期股权投资</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>固定资产</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>在线工程</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>无形资产</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>开发支出</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>长期待摊费用</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>递延所得税资产</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>发放贷款及垫款</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>非流动资产合计</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>资产总计</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>短期借款</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应付票据</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应付账款</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>预收款项</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应付职工薪酬</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应交税费</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>应付利息</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+							<tr>
+								<td>其他应付款</td>
+								<td>49.82</td>
+								<td>41.65</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+								<td>37.63</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
